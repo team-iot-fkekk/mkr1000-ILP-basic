@@ -2,19 +2,21 @@
 
 #define myLED 6
 
-void setup() {
+void setup()
+{
   // put your setup code here, to run once:
-  pinMode(myLED ,OUTPUT);
+  pinMode(myLED, OUTPUT);
   Serial.begin(9600);
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
   digitalWrite(myLED, HIGH);
-  Serial.println("LED ON");
+  Serial.println("LED NYALA ON");
   delay(500);
 
   digitalWrite(myLED, LOW);
-  Serial.println("LED OFF");
+  Serial.println("LED PADAM OFF");
   delay(500);
 }
